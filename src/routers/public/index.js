@@ -6,4 +6,7 @@ module.exports = function (server) {
 
     const resetPasswordRouter = require('./resetPasswordRouter');
     server.use(mount('/api/resetpassword', resetPasswordRouter.routes()));
+
+    const helloRouter = require('./helloRouter');
+    server.use(mount('/hello', helloRouter.routes()));
 };

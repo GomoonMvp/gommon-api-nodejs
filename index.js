@@ -41,9 +41,8 @@ require('./src/routers/private/index')(server);
 db.then(() => {
 
         var con = http.createServer(server.callback());
-
         con.listen(api.port, () => {
-            console.log('Server listening at http://localhost:' + api.port);
+            console.log('Server listening at http://localhost:' + api.port + ' try your API in http://localhost:' + api.port + '/hello');
         });
     })
     .catch((error) => {

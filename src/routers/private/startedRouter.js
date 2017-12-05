@@ -1,13 +1,12 @@
 'use strict';
 const Router = require('koa-router');
 
-let helloRouter = new Router();
+let startedRouter = new Router();
 
-helloRouter.get('', function* (next) {
+startedRouter.get('', function* (next) {
     try {
         this.body = {
-            message: "Hello GoMoon Tamplate Rest API",
-            version: "1.0"
+            message: "GO GO GO!"        
         }
     } catch (e) {
         console.log(e);
@@ -19,4 +18,4 @@ helloRouter.get('', function* (next) {
     }
 });
 
-module.exports = helloRouter;
+module.exports = startedRouter;
