@@ -1,6 +1,6 @@
 # GoMoon 
 
-[Gomoon](https://www.gomoon.com.br), tire suas ideias do papel.
+[GoMoon](https://www.gomoon.com.br), tire suas ideias do papel.
 
 # Api REST GoMoon Template
 
