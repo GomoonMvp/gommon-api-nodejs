@@ -1,0 +1,56 @@
+{
+  "name": "gomoon-api",
+  "version": "1.0.0",
+  "description": "GoMoon Template API",
+  "main": "index.js",
+  "scripts": {
+    "unitTests": "node_modules/.bin/mocha './test/**/*.spec.js'",
+    "integratedTests": "export MONGO_HOST=[mongoConexao] && node_modules/.bin/mocha './test/**/*.integrated.js'",
+    "unitTestsCoverage": "nyc --reporter=lcov --reporter=text-lcov npm run unitTests",
+    "checkCoverage": "nyc check-coverage --statements 6 --lines 8",
+    "seed": "node ./database/run.js",
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Ramde Amazonas Costa",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "co": "^4.6.0",
+    "co-busboy": "^1.3.1",
+    "handlebars": "^4.0.5",
+    "koa": "^1.2.0",
+    "koa-body": "^1.4.0",
+    "koa-cors": "0.0.16",
+    "koa-cors-error": "0.0.2",
+    "koa-gzip": "^0.1.0",
+    "koa-mount": "^1.3.0",
+    "koa-oauth-server": "^1.0.1",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.1",
+    "lodash": "^4.13.1",
+    "mime": "^1.3.4",
+    "moment": "^2.13.0",
+    "moment-timezone": "^0.5.6",
+    "mongoose": "^4.4.20",
+    "mongoose-id-validator": "^0.4.2",
+    "mongoose-schema-extend": "^0.2.2",
+    "q": "^1.4.1",
+    "randomstring": "^1.1.5",
+    "sendgrid": "^4.4.0",
+    "uuid": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "chai-generator": "^2.1.0",
+    "co-mocha": "^1.2.0",
+    "faker": "^4.1.0",
+    "mocha": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "sinon": "^3.2.1",
+    "supertest": "^3.0.0"
+  },
+  "engines": {
+    "node": "7.7.3"
+  }
+}
