@@ -28,7 +28,7 @@ npm run dev
 ```
 Api estará disponivel em
 ```
-http://localhost:3000
+http://localhost:3000/hello
 ```
 
 ## Authors
